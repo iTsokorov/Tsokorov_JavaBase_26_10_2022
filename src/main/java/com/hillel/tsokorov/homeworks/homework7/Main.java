@@ -41,6 +41,7 @@ public class Main {
             }
             if (tryOfUser == countOfTries) {
                 System.out.println("Sorry, it was your last try.");
+                System.out.println("Random number of computer - " + randomNumber + ".");
                 System.out.println("YOU LOSE!");
                 break;
             }
