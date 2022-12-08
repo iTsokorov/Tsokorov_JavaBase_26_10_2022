@@ -48,10 +48,7 @@ public class Main {
                 System.out.println("Try a bigger number.");
                 continue;
             }
-            if (numberOfUser > randomNumber) {
-                System.out.println("Try a smaller number.");
-                continue;
-            }
+            System.out.println("Try a smaller number.");
         }
     }
 }
