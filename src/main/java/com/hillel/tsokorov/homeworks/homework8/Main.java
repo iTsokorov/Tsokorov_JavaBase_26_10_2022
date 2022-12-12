@@ -3,24 +3,21 @@ package com.hillel.tsokorov.homeworks.homework8;
 public class Main {
     public static void main(String[] args) {
 
-        int shuttles;
-        int countShuttles = 0;
+        int countOfLuckyShuttles = 0;
+        int shuttles = 100;
 
-        for (shuttles = 100; shuttles > 0; shuttles--) {
-            if (shuttles % 10 == 4 || shuttles % 10 == 9) {
+        for (int i = 1; i <= shuttles; i++) {
+            if (i % 10 == 4 || i % 10 == 9) {
                 continue;
             }
-            if (shuttles / 10 == 4 || shuttles / 10 == 9) {
+            if (i / 10 % 10 == 4 || i / 10 % 10 == 9){
                 continue;
             }
-            if (shuttles / 10 / 10 == 4 || shuttles / 10 / 10 == 9) {
-                continue;
-            }
-            if (shuttles / 10 % 10 == 4 || shuttles / 10 % 10 == 9) {
-                continue;
-            }
-            countShuttles++;
+            System.out.println("Number of shuttle: " + i);
+            countOfLuckyShuttles++;
         }
-        System.out.println("Count of shuttles - " + countShuttles);
+        System.out.println("Count of lucky shuttles - " + countOfLuckyShuttles);
+        System.out.println("Count of unlucky shuttles - " + (shuttles - countOfLuckyShuttles));
+
     }
 }
