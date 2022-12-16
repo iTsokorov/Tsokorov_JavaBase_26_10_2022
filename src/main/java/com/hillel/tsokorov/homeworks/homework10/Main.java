@@ -31,7 +31,7 @@ public class Main {
                 savedElements[oldLength] = i;
             }
         }
-        System.out.println("Elements coincided: " + Arrays.toString(savedElements));
+        System.out.println("Elements matched: " + Arrays.toString(savedElements));
         System.out.println("Count of matches: " + accordance);
     }
 }
