@@ -21,8 +21,8 @@ public class Main {
         System.out.println("Player numbers: " + Arrays.toString(arrayPlayer));
 
         int accordance = 0;
+        int[] savedElements = new int[0];
 
-        int[] savedElements = {};
         for (int i = 0; i < arrayLottery.length; i++) {
             if (arrayLottery[i] == arrayPlayer[i]) {
                 accordance++;
@@ -31,7 +31,7 @@ public class Main {
                 savedElements[oldLength] = i;
             }
         }
-        System.out.println("Saved elements = " + Arrays.toString(savedElements));
-        System.out.println("Number of matches: " + accordance);
+        System.out.println("Elements coincided: " + Arrays.toString(savedElements));
+        System.out.println("Count of matches: " + accordance);
     }
 }
