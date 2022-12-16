@@ -22,12 +22,16 @@ public class Main {
 
         int accordance = 0;
 
+        int[] savedElements = {};
         for (int i = 0; i < arrayLottery.length; i++) {
             if (arrayLottery[i] == arrayPlayer[i]) {
                 accordance++;
-
+                int oldLength = savedElements.length;
+                savedElements = Arrays.copyOf(savedElements, oldLength + 1);
+                savedElements[oldLength] = i;
             }
         }
+        System.out.println("Saved elements = " + Arrays.toString(savedElements));
         System.out.println("Number of matches: " + accordance);
     }
 }
