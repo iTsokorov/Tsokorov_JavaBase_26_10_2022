@@ -1,4 +1,4 @@
-package com.hillel.tsokorov.homeworks.homeworks11;
+package com.hillel.tsokorov.homeworks.homework11;
 
 import java.util.Scanner;
 
