@@ -85,9 +85,6 @@ public class Fitness {
     public void setDayStepScore(int dayStepScore) {
         this.dayStepScore = dayStepScore;
     }
-
-
-
     public int getAge() {
         age = 2020 - yearBorn;
         return age;
