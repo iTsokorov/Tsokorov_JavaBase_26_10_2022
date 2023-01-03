@@ -18,6 +18,6 @@ public class IPhones implements Smartphones, IOS{
 
     @Override
     public void updateOs() {
-        System.out.println("iPhone can be updated");
+        System.out.println("iOS can be updated");
     }
 }
