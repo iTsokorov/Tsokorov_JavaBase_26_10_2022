@@ -54,7 +54,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.hillel.tsokorov.homeworks.homework17.Main</mainClass>
+                            <mainClass>com.hillel.tsokorov.homeworks.homework18.UtilArray</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
